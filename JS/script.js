@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     themeToggle.textContent = "🌙";
 
     window.addEventListener("scroll", function () {
-        navbar.classList.toggle("visible", window.scrollY > 80);
+        navbar.classList.toggle("visible", window.scrollY > 100);
     });
 
     themeToggle.addEventListener("click", function () {
