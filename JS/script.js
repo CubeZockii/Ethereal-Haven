@@ -1,25 +1,29 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
     const themeToggle = document.getElementById("themeToggle");
+    const navbar = document.querySelector(".navbar");
 
-    function updateThemeIcon() {
-        themeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
-    }
+    // Standard-Emoji setzen
+    let isDarkMode = false;
+    themeToggle.textContent = "🌙";
 
-    // Load dark mode preference
-    if (localStorage.getItem("darkMode") === "enabled") {
-        document.body.classList.add("dark-mode");
-        updateThemeIcon();
-    }
+    window.addEventListener("scroll", function () {
+        navbar.classList.toggle("visible", window.scrollY > 80);
+    });
 
-    themeToggle.addEventListener("click", () => {
+    themeToggle.addEventListener("click", function () {
         document.body.classList.toggle("dark-mode");
-        updateThemeIcon();
+        document.body.classList.toggle("light-mode");
 
-        // Save dark mode state
-        if (document.body.classList.contains("dark-mode")) {
-            localStorage.setItem("darkMode", "enabled");
-        } else {
-            localStorage.setItem("darkMode", "disabled");
-        }
+        // Füge die Animation hinzu
+        themeToggle.classList.add("animate");
+
+        // Nach der Animation Klasse wieder entfernen
+        setTimeout(() => {
+            themeToggle.classList.remove("animate");
+        }, 500);
+
+        // Wechsle das Emoji
+        isDarkMode = !isDarkMode;
+        themeToggle.textContent = isDarkMode ? "☀️" : "🌙";
     });
 });
