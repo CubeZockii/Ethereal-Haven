@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereal Haven ~ Staff Apply</title>
+    <link rel="stylesheet" href="./static/styles.css">
+    <script defer src="./static/script.js"></script>
+</head>
+<body>
+ <h1 class="main-title">Ethereal Haven Staff Applications</h1>
+
+    <!-- Navigationsleiste -->
+    <header class="navbar">
+        <nav>
+            <a class="about-link" href="index.html">Home</a>
+            <a class="about-link" href="https://cubezockii.github.io/about-me/">About Me</a>
+        </nav>
+    </header>
+
+    <!-- Hauptinhalt -->
+    <main>
+        <section id="apply" class="hero fade-in">
+            <h2 class="section-title">Apply for a Staff Position</h2>
+            <p class="section-subtitle">Want to help make our community even better? Fill out the form below to apply for a staff position!</p>
+
+            <div class="form-container">
+                <form action="http://localhost:5000/apply" method="POST" class="application-form card">
+                    <label for="id">Discord ID</label>
+                    <input type="text" id="id" name="id" maxlength="18" required>
+                    <span></span>
+                    
+                    <label for="discord">Discord Username</label>
+                    <input type="text" id="discord" name="discord" required>
+                    <span></span>
+                
+                    <label for="age">Your Age</label>
+                    <input type="number" id="age" name="age" min="14" max="25" required>
+                    <span></span>
+                
+                    <label for="role">Which role are you applying for?</label>
+                    <div class="dropdown-container">
+                        <select id="role" name="role" required>
+                            <option value="" disabled selected>Select a role</option>
+                            <option value="admin">Admin</option>
+                            <option value="head-management">Head Managment</option>
+                            <option value="manager">Managment</option>
+                            <option value="head-moderator">Head Moderator</option>
+                            <option value="moderator">Moderator</option>
+                        </select>
+                    </div>
+                    <span></span>
+                
+                    <label for="experience">Do you have any moderation experience?</label>
+                    <textarea style="resize: none;" id="experience" name="experience" rows="6" placeholder="Tell us about your experience..." required></textarea>
+                    <span></span>
+                
+                    <label for="reason">Why do you want to become a staff member?</label>
+                    <textarea style="resize: none;" id="reason" name="reason" rows="6" placeholder="Explain your motivation..." required></textarea>
+                    <span></span>
+                
+                    <button type="submit" class="apply-button cta-btn">Submit Application</button>
+                </form>
+                
+            </div>
+        </section>
+    </main>
+
+    <button id="themeToggle" title="Toggle Theme">🌙</button>
+</body>
+</html>
