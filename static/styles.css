@@ -133,7 +133,6 @@ main {
     font-size: 1.8em;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
-    z-index: 11;
 }
 
 #themeToggle:hover {
@@ -198,7 +197,6 @@ a {
     justify-content: center;
     align-items: center;
     padding: 40px 20px;
-    z-index: 10;
 }
 
 /* Formular Box */
