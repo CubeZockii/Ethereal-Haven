@@ -215,7 +215,7 @@ a {
     display: block;
     font-weight: bold;
     margin-top: 15px;
-    color: #064273;
+    color: #6a0692;
     text-align: left;
 }
 
@@ -224,7 +224,7 @@ a {
     width: 90%;
     padding: 12px;
     margin-top: 5px;
-    border: 2px solid #5dbcd2;
+    border: 2px solid #9900ff;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.8);
     font-size: 16px;
@@ -237,8 +237,8 @@ a {
 
 .application-form input:focus,
 .application-form textarea:focus {
-    border-color: #0077b6;
-    background: #e0f7fa;
+    border-color: #510e58;
+    background: #ffffff;
 }
 
 /* Custom Dropdown Styling */
@@ -253,7 +253,7 @@ a {
 .dropdown-container select {
     width: 100%;
     padding: 12px;
-    border: 2px solid #5dbcd2;
+    border: 2px solid #8607cf;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.9);
     font-size: 16px;
@@ -263,7 +263,7 @@ a {
     transition: 0.3s ease-in-out;
     text-align: center;
     font-weight: bold;
-    color: #064273;
+    color: #ab0cf5;
 }
 
 .dropdown-container::after {
@@ -279,8 +279,7 @@ a {
 
 .dropdown-container select:hover,
 .dropdown-container select:focus {
-    border-color: #0077b6;
-    background: #e0f7fa;
+    border-color: #59046e;
 }
 
 /* Styling for Required Field Message */
