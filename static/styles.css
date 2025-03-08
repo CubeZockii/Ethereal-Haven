@@ -206,8 +206,8 @@ a {
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 90%;
-    width: 38%;
+    max-width: 550px;
+    width: 110%;
     text-align: center;
     z-index: 10;
 }
@@ -306,7 +306,7 @@ textarea:invalid + span::after,
 select:invalid + span::after {
     content: "⚠ Please fill out this field!";
     color: #ff4d4d;
-    font-size: 13px;
+    font-size: 14px;
     display: block;
     margin-top: 5px;
 }
@@ -402,62 +402,5 @@ select:invalid + span::after {
     .apply-button {
         font-size: 1em;
         padding: 12px;
-    }
-}
-
-@media (max-width: 441px) {
-    /* Haupttitel kleiner machen */
-    .main-title {
-        font-size: 1.6em;
-    }
-
-    /* Hero Section anpassen */
-    .hero {
-        padding: 50px 15px;
-    }
-
-    /* Formular-Bereich verkleinern */
-    .application-form {
-        max-width: 95%;
-        padding: 15px;
-    }
-
-    /* Labels kleiner machen */
-    .application-form label {
-        font-size: 0.85em;
-    }
-
-    /* Eingabefelder anpassen */
-    .application-form input,
-    .application-form textarea {
-        width: 100%;
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    /* Dropdown anpassen */
-    .dropdown-container select {
-        font-size: 14px;
-    }
-
-    /* Fehlernachricht kleiner machen */
-    input:invalid + span::after,
-    textarea:invalid + span::after,
-    select:invalid + span::after {
-        font-size: 12px;
-    }
-
-    /* Button anpassen */
-    .apply-button {
-        font-size: 1em;
-        padding: 10px;
-    }
-
-    /* Theme-Button kleiner machen */
-    #themeToggle {
-        bottom: 10px;
-        right: 10px;
-        font-size: 1.5em;
-        padding: 10px;
     }
 }
