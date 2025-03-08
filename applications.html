@@ -10,6 +10,17 @@
 <body>
  <h1 class="main-title">Ethereal Haven Staff Applications</h1>
 
+<script>
+    function checkLowercase() {
+        let input = document.getElementById("discord").value;
+        if (input !== input.toLowerCase()) {
+            alert("Please only use Lowercase!");
+            return false; // Stoppt das Absenden
+        }
+        return true;
+    }
+    </script>
+
     <!-- Navigationsleiste -->
     <header class="navbar">
         <nav>
