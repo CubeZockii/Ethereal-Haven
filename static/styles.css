@@ -133,6 +133,7 @@ main {
     font-size: 1.8em;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
+    z-index: 11;
 }
 
 #themeToggle:hover {
